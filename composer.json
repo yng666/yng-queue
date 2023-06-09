@@ -1,0 +1,36 @@
+{
+    "name": "yng/yng-queue",
+    "description": "The YNGPHP Queue Package",
+    "authors": [
+        {
+            "name": "yng",
+            "email": "840638148@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yng\\Queue": "src"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "yng/yng-framework": "dev-main",
+        "symfony/process": "^4.2",
+        "nesbot/carbon": "^2.16"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Yng\\Queue\\Queue\\Service"
+            ],
+            "config": {
+                "queue": "src/config.php"
+            }
+        }
+    }
+}
