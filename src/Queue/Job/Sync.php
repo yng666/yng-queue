@@ -1,8 +1,8 @@
 <?php
-namespace Yng\Queue\Queue\Job;
+namespace Yng\Queue\Job;
 
 use Yng\App;
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Job;
 
 
 class Sync extends Job

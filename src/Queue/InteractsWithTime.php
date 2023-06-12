@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 
 use Carbon\Carbon;

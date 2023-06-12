@@ -1,7 +1,7 @@
 <?php
-namespace Yng\Queue\Queue\Failed;
+namespace Yng\Queue\Failed;
 
-use Yng\Queue\Queue\FailedJob;
+use Yng\Queue\FailedJob;
 
 /**
  * 空的失败类

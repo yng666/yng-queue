@@ -1,12 +1,12 @@
 <?php
-namespace Yng\Queue\Queue\Command;
+namespace Yng\Queue\Command;
 
 use Yng\Console\Command;
 use Yng\Console\Input;
 use Yng\Console\Input\Argument;
 use Yng\Console\Input\Option;
 use Yng\Console\Output;
-use Yng\Queue\Queue\Listener;
+use Yng\Queue\Listener;
 
 
 /**

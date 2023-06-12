@@ -1,6 +1,6 @@
 <?php
 
-namespace Yng\Queue\Queue\Exception;
+namespace Yng\Queue\Exception;
 
 use RuntimeException;
 

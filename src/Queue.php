@@ -2,9 +2,9 @@
 declare (strict_types = 1);
 namespace Yng;
 
-use Yng\Queue\Queue\Connector;
-use Yng\Queue\Queue\Connector\Database;
-use Yng\Queue\Queue\Connector\Redis;
+use Yng\Queue\Connector;
+use Yng\Queue\Connector\Database;
+use Yng\Queue\Connector\Redis;
 
 /**
  * 队列类
@@ -15,7 +15,7 @@ use Yng\Queue\Queue\Connector\Redis;
  */
 class Queue extends Manager
 {
-    protected $namespace = '\\Yng\\Queue\\Queue\\Connector\\';
+    protected $namespace = '\\Yng\\Queue\\Connector\\';
 
     /**
      * 获取驱动类型

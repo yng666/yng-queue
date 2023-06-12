@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 /**
  * 定义Queue的一些常用方法

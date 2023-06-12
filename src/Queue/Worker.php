@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 use Carbon\Carbon;
 use Exception;
@@ -9,12 +9,12 @@ use Yng\Cache;
 use Yng\Event;
 use Yng\Exception\Handle;
 use Yng\Queue;
-use Yng\Queue\Queue\Event\JobExceptionOccurred;
-use Yng\Queue\Queue\Event\JobFailed;
-use Yng\Queue\Queue\Event\JobProcessed;
-use Yng\Queue\Queue\Event\JobProcessing;
-use Yng\Queue\Queue\Event\WorkerStopping;
-use Yng\Queue\Queue\Exception\MaxAttemptsExceededException;
+use Yng\Queue\Event\JobExceptionOccurred;
+use Yng\Queue\Event\JobFailed;
+use Yng\Queue\Event\JobProcessed;
+use Yng\Queue\Event\JobProcessing;
+use Yng\Queue\Event\WorkerStopping;
+use Yng\Queue\Exception\MaxAttemptsExceededException;
 use Throwable;
 
 

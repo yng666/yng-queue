@@ -1,6 +1,6 @@
 <?php
 
-namespace Yng\Queue\Queue\Event;
+namespace Yng\Queue\Event;
 
 class WorkerStopping
 {

@@ -1,10 +1,10 @@
 <?php
-namespace Yng\Queue\Queue\Command;
+namespace Yng\Queue\Command;
 
 use Yng\Console\Command;
 
 use Yng\Cache;
-use Yng\Queue\Queue\InteractsWithTime;
+use Yng\Queue\InteractsWithTime;
 
 
 /**

@@ -1,12 +1,12 @@
 <?php
-namespace Yng\Queue\Queue\Connector;
+namespace Yng\Queue\Connector;
 
 use Exception;
-use Yng\Queue\Queue\Connector;
-use Yng\Queue\Queue\Event\JobFailed;
-use Yng\Queue\Queue\Event\JobProcessed;
-use Yng\Queue\Queue\Event\JobProcessing;
-use Yng\Queue\Queue\Job\Sync as SyncJob;
+use Yng\Queue\Connector;
+use Yng\Queue\Event\JobFailed;
+use Yng\Queue\Event\JobProcessed;
+use Yng\Queue\Event\JobProcessing;
+use Yng\Queue\Job\Sync as SyncJob;
 use Throwable;
 
 

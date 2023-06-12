@@ -22,7 +22,7 @@ return [
 > 也可以放在任意可以自动加载到的地方
 
 任务类不需继承任何类，如果这个类只有一个任务，那么就只需要提供一个`fire`方法就可以了，如果有多个小任务，就写多个方法，下面发布任务的时候会有区别  
-每个方法会传入两个参数 `Yng\Queue\Queue\Job $job`（当前的任务对象） 和 `$data`（发布任务时自定义的数据）
+每个方法会传入两个参数 `Yng\Queue\Job $job`（当前的任务对象） 和 `$data`（发布任务时自定义的数据）
 
 还有个可选的任务失败执行的方法 `failed` 传入的参数为`$data`（发布任务时自定义的数据）
 
@@ -31,7 +31,7 @@ return [
 ```php
 namespace Yng\Job;
 
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Job;
 
 class DemoJob{
     
@@ -60,7 +60,7 @@ class DemoJob{
 ```php
 namespace app\lib\job;
 
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Job;
 
 class Job2{
     public function task1(Job $job, $data){

@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 use Closure;
 use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\Process;

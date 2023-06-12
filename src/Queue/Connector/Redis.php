@@ -1,13 +1,13 @@
 <?php
-namespace Yng\Queue\Queue\Connector;
+namespace Yng\Queue\Connector;
 
 use Closure;
 use Exception;
 use RedisException;
 use Yng\Helper\Str;
-use Yng\Queue\Queue\Connector;
-use Yng\Queue\Queue\InteractsWithTime;
-use Yng\Queue\Queue\Job\Redis as RedisJob;
+use Yng\Queue\Connector;
+use Yng\Queue\InteractsWithTime;
+use Yng\Queue\Job\Redis as RedisJob;
 
 /**
  * 队列任务--Redis存储引擎

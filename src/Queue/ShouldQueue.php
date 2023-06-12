@@ -1,4 +1,4 @@
 <?php
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 interface ShouldQueue{}

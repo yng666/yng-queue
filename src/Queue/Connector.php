@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 use DateTimeInterface;
 use InvalidArgumentException;
@@ -137,7 +137,7 @@ abstract class Connector
     protected function createObjectPayload($job)
     {
         return [
-            'job'       => 'Yng\Queue\Queue\CallQueuedHandler@call',
+            'job'       => 'Yng\Queue\CallQueuedHandler@call',
             'maxTries'  => $job->tries ?? null,
             'timeout'   => $job->timeout ?? null,
             'timeoutAt' => $this->getJobExpiration($job),

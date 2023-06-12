@@ -1,10 +1,10 @@
 <?php
 
-namespace Yng\Queue\Queue\Failed;
+namespace Yng\Queue\Failed;
 
 use Carbon\Carbon;
 use Yng\Db;
-use Yng\Queue\Queue\FailedJob;
+use Yng\Queue\FailedJob;
 
 /**
  * 失败存储数据库

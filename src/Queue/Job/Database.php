@@ -1,9 +1,9 @@
 <?php
-namespace Yng\Queue\Queue\Job;
+namespace Yng\Queue\Job;
 
 use Yng\App;
-use Yng\Queue\Queue\Connector\Database as DatabaseQueue;
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Connector\Database as DatabaseQueue;
+use Yng\Queue\Job;
 
 class Database extends Job
 {

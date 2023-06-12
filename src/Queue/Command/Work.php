@@ -1,16 +1,16 @@
 <?php
-namespace Yng\Queue\Queue\Command;
+namespace Yng\Queue\Command;
 
 use Yng\Console\Command;
 use Yng\Console\Input;
 use Yng\Console\Input\Argument;
 use Yng\Console\Input\Option;
 use Yng\Console\Output;
-use Yng\Queue\Queue\Event\JobFailed;
-use Yng\Queue\Queue\Event\JobProcessed;
-use Yng\Queue\Queue\Event\JobProcessing;
-use Yng\Queue\Queue\Job;
-use Yng\Queue\Queue\Worker;
+use Yng\Queue\Event\JobFailed;
+use Yng\Queue\Event\JobProcessed;
+use Yng\Queue\Event\JobProcessing;
+use Yng\Queue\Job;
+use Yng\Queue\Worker;
 
 /**
  * Work 模式命令配置

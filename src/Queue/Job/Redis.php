@@ -1,9 +1,9 @@
 <?php
-namespace Yng\Queue\Queue\Job;
+namespace Yng\Queue\Job;
 
 use Yng\App;
-use Yng\Queue\Queue\Connector\Redis as RedisQueue;
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Connector\Redis as RedisQueue;
+use Yng\Queue\Job;
 
 class Redis extends Job
 {

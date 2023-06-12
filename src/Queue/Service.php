@@ -1,19 +1,19 @@
 <?php
 declare (strict_types = 1);
-namespace Yng\Queue\Queue;
+namespace Yng\Queue;
 
 use Yng\Helper\Arr;
 use Yng\Helper\Str;
 use Yng\Queue;
-use Yng\Queue\Queue\Command\FailedTable;
-use Yng\Queue\Queue\Command\FlushFailed;
-use Yng\Queue\Queue\Command\ForgetFailed;
-use Yng\Queue\Queue\Command\Listen;
-use Yng\Queue\Queue\Command\ListFailed;
-use Yng\Queue\Queue\Command\Restart;
-use Yng\Queue\Queue\Command\Retry;
-use Yng\Queue\Queue\Command\Table;
-use Yng\Queue\Queue\Command\Work;
+use Yng\Queue\Command\FailedTable;
+use Yng\Queue\Command\FlushFailed;
+use Yng\Queue\Command\ForgetFailed;
+use Yng\Queue\Command\Listen;
+use Yng\Queue\Command\ListFailed;
+use Yng\Queue\Command\Restart;
+use Yng\Queue\Command\Retry;
+use Yng\Queue\Command\Table;
+use Yng\Queue\Command\Work;
 
 /**
  * 队列服务
@@ -29,7 +29,7 @@ class Service extends \Yng\Service
 
             $type = Arr::pull($config, 'type', 'none');
 
-            $class = false !== strpos($type, '\\') ? $type : '\\Yng\\Queue\\Queue\\Failed\\' . Str::studly($type);
+            $class = false !== strpos($type, '\\') ? $type : '\\Yng\\Queue\\Failed\\' . Str::studly($type);
 
             return $this->app->invokeClass($class, [$config]);
         });

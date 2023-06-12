@@ -1,5 +1,5 @@
 <?php
-namespace Yng\Queue\Queue\Command;
+namespace Yng\Queue\Command;
 
 use Yng\Console\Command;
 use Yng\Console\Table;

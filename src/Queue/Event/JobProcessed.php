@@ -1,8 +1,8 @@
 <?php
 
-namespace Yng\Queue\Queue\Event;
+namespace Yng\Queue\Event;
 
-use Yng\Queue\Queue\Job;
+use Yng\Queue\Job;
 class JobProcessed
 {
     /** @var string */

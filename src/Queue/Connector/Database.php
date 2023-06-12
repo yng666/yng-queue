@@ -1,14 +1,14 @@
 <?php
-namespace Yng\Queue\Queue\Connector;
+namespace Yng\Queue\Connector;
 
 use Carbon\Carbon;
 use stdClass;
 use Yng\Db;
 use Yng\Db\ConnectionInterface;
 use Yng\Db\Query;
-use Yng\Queue\Queue\Connector;
-use Yng\Queue\Queue\InteractsWithTime;
-use Yng\Queue\Queue\Job\Database as DatabaseJob;
+use Yng\Queue\Connector;
+use Yng\Queue\InteractsWithTime;
+use Yng\Queue\Job\Database as DatabaseJob;
 
 
 /**
