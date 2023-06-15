@@ -10,7 +10,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Yng\\Queue\\": "src"
+            "Yng\\": "src"
         },
         "files": [
             "src/common.php"
@@ -26,7 +26,7 @@
     "extra": {
         "yng": {
             "services": [
-                "\\Yng\\Queue\\Service"
+                "Yng\\Queue\\Service"
             ],
             "config": {
                 "queue": "src/config.php"

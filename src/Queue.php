@@ -8,7 +8,7 @@ use Yng\Queue\Connector\Redis;
 
 /**
  * 队列类
- * @package Yng\queue
+ * @package Yng\Queue
  *
  * @mixin Database
  * @mixin Redis
